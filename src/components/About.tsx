@@ -12,18 +12,18 @@ const About = () => {
   const skillsRef = useRef<HTMLDivElement>(null);
 
   const skills = [
-    { icon: Globe, name: 'HTML5/CSS3', level: 95 },
+    { icon: Globe, name: 'HTML5/CSS', level: 95 },
     { icon: Code, name: 'JavaScript', level: 90 },
-    { icon: Code, name: 'React/Redux', level: 95 },
-    { icon: Lightning, name: 'Tailwind CSS', level: 91 },
-    { icon: Cube, name: 'Bootstrap', level: 91 },
-    { icon: Rocket, name: 'Next.js', level: 85 },
+    { icon: Code, name: 'AI&Data', level: 95 },
+    { icon: Lightning, name: 'DevOps & Tools', level: 91 },
+    { icon: Cube, name: 'AWS(basics)', level: 91 },
+    { icon: Rocket, name: 'Node.js', level: 85 },
     { icon: Heart, name: 'UI/UX Design', level: 87 },
-    { icon: Terminal, name: 'Node.js/Express.js', level: 87 },
-    { icon: Database, name: 'MongoDB', level: 87 },
-    { icon: Database, name: 'PostgreSQL', level: 87 },
-    { icon: GitBranch, name: 'Git', level: 89 },
-    { icon: Cube, name: 'GitHub', level: 83 },
+    { icon: Terminal, name: 'Team Work', level: 87 },
+    { icon: Database, name: 'Python', level: 87 },
+    { icon: Database, name: 'DBMS', level: 87 },
+    { icon: GitBranch, name: 'IOT', level: 89 },
+    { icon: Cube, name: 'Video Editing', level: 83 },
   ];
 
   useEffect(() => {
@@ -101,17 +101,16 @@ const About = () => {
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I’m a Full-Stack Developer with 1 year of hands-on experience building fast, scalable, and responsive web applications using React.js, Node.js, Express, MongoDB, and PostgreSQL/MySQL. I specialize in creating secure RESTful APIs, implementing modern frontend interfaces, and managing full deployment pipelines using tools like Docker and Git.
+              I’m a results-oriented BCA student specializing in Artificial Intelligence, Cloud Computing, and DevOps . With a strong foundation in Python and JavaScript, I build scalable applications and machine learning models, including real-time monitoring systems and NLP-based detection tools . I specialize in creating data-driven insights and implementing modern technical architectures.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My skill set spans both frontend and backend development, with a strong focus on clean code, smooth user experiences, and animation-driven UI using libraries like Framer Motion. I'm passionate about solving real-world problems with practical, efficient, and user-centered solutions.
+              My skill set spans CI/CD pipelines, cloud infrastructure fundamentals, and data visualization using Pandas and Matplotlib.I am passionate about solving real-world problems with practical, efficient, and user-centered solutions through clean code and analytical thinking. I focus on delivering high-quality projects that bridge the gap between complex data and smooth user experiences.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
               <div className="glass px-4 py-2 rounded-lg">
-                <span className="text-primary-glow font-medium">1</span>
-                <span className="text-muted-foreground ml-1">Years Experience</span>
+                <span className="text-muted-foreground ml-1">Fresher | BCA (AI, Cloud & DevOps)</span>
               </div>
               <div className="glass px-4 py-2 rounded-lg">
                 <span className="text-secondary-glow font-medium">3+</span>
@@ -119,7 +118,7 @@ const About = () => {
               </div>
               <div className="glass px-4 py-2 rounded-lg">
                 <span className="text-accent-glow font-medium">100%</span>
-                <span className="text-muted-foreground ml-1">Client Satisfaction</span>
+                <span className="text-muted-foreground ml-1">Actively Upskilling</span>
               </div>
             </div>
           </div>
@@ -127,7 +126,7 @@ const About = () => {
 
         <div className="mt-20">
           <h3 className="text-3xl font-light text-center text-foreground mb-12">
-            My <span className="text-primary-glow">Skills</span>
+             My<span className="text-primary-glow">Skills</span>
           </h3>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

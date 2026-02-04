@@ -93,8 +93,8 @@ const Hero = () => {
 
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/Images/CodeZenith-Resume.pdf';
-    link.download = 'CodeZenith-Resume.pdf';
+   link.href = '/images/ADITHYANK-resume.pdf';
+link.download = 'ADITHYANK-resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -114,15 +114,15 @@ const Hero = () => {
         <h1 ref={titleRef} className="text-4xl md:text-6xl lg:text-7xl font-light text-foreground mb-6 leading-tight">
           Hi, I'm{' '}
           <span className="text-glow bg-gradient-primary bg-clip-text text-transparent">
-            CodeZenith
+            Adithyan K
           </span>
           {' '}–{' '}
           <br className="hidden md:block" />
-          <span className="text-primary-glow">Full Stack Developer</span>
+          <span className="text-primary-glow">Frontend Developer</span>
         </h1>
 
         <p ref={subtitleRef} className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-          Full Stack Developer crafting modern, responsive web apps with clean UI and robust backend architecture
+          Aspiring Cloud & DevOps engineer with hands-on experience in cloud fundamentals, CI/CD workflows, Python scripting, and modern web technologies
         </p>
 
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-4">

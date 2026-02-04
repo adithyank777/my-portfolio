@@ -72,7 +72,7 @@ const Navigation = () => {
   const navItems = [
     { name: 'Home', id: 'hero' },
     { name: 'About', id: 'about' },
-    { name: 'Projects', id: 'projects' },
+    { name: 'Certificates', id: 'certificates' },
     { name: 'Contact', id: 'contact' }
   ];
 
