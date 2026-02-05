@@ -24,14 +24,14 @@ const Certificates = () => {
       title: "Generative AI Literacy",
       issuer: "FutureSkills Prime (NASSCOM)",
       year: "Sep 2025",
-      file: "/certificates/nasscom-generative-ai.pdf",
+      file: "/Images/Certificates/generative-ai.pdf",
     },
     {
       id: 3,
       title: "AI Tools Workshop",
       issuer: "Be10X",
       year: "Jan 2026",
-      file: "/certificates/ai-tools-workshop.pdf",
+      file: "/Images/Certificates/ai-tools-workshop.pdf",
     },
   ];
 

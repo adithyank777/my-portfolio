@@ -83,8 +83,8 @@ const About = () => {
 
               <div className="relative w-full h-full glass rounded-full p-2 hover:shadow-glow-primary transition-all duration-500 group">
                 <div className="w-full h-full cursor-pointer rounded-full overflow-hidden bg-gradient-secondary relative">
-                  <img 
-                    src="/Images/profilelogo.jpg" 
+<img 
+                    src="/Images/profileLogo.jpg" 
                     alt="Adithyan K - DevOps Engineer" 
                     className="w-full h-full object-cover object-[center_20%] group-hover:scale-110 transition-transform duration-500" 
                   />
