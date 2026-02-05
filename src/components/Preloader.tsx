@@ -12,46 +12,54 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
   const percentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMobile = window.innerWidth < 768;
+    
     const tl = gsap.timeline();
+    
+    // Faster animations on mobile
+    const duration = isMobile ? 1.5 : 2.5;
+    const fadeDuration = isMobile ? 0.5 : 1;
 
     tl.from(logoRef.current, {
       scale: 0.5,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.6,
       ease: "power3.out"
     })
 
       .to(progressBarRef.current, {
         width: "100%",
-        duration: 2.5,
+        duration: duration,
         ease: "power2.out"
       }, "-=0.3")
 
       .to({ value: 0 }, {
         value: 100,
-        duration: 2.5,
+        duration: duration,
         ease: "power2.out",
         onUpdate: function () {
           if (percentRef.current) {
             percentRef.current.textContent = Math.round(this.targets()[0].value) + '%';
           }
         }
-      }, "-=2.5")
+      }, "-=" + duration)
 
       .to(logoRef.current, {
         scale: 1.1,
-        duration: 0.3,
+        duration: 0.2,
         ease: "power2.out"
       })
       .to(preloaderRef.current, {
         opacity: 0,
-        scale: 0.9,
-        duration: 1,
+        scale: prefersReducedMotion ? 1 : 0.9,
+        duration: fadeDuration,
         ease: "power3.inOut",
         onComplete: () => {
           onComplete();
         }
-      }, "+=0.2");
+      }, "+=0.1");
 
     return () => {
       tl.kill();
@@ -63,9 +71,8 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
       <div className="text-center">
         <div ref={logoRef} className="mb-8">
           <h1 className="text-2xl md:text-3xl font-light text-foreground text-glow mb-4">
-             CodeZenith
+             Loading....
           </h1>
-          <p className="text-xl text-muted-foreground">Loading Portfolio...</p>
         </div>
 
         <div className="w-80 max-w-md mx-auto">
